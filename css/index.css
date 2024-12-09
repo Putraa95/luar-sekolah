@@ -1,0 +1,311 @@
+/* ========================
+   General Styling
+========================= */
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f4f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ========================
+   Navbar Styling
+========================= */
+
+.navbar {
+  border: none;
+}
+
+.navbar-nav .nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: blue;
+}
+
+.navbar-nav .nav-link:active,
+.navbar-nav .nav-link:focus {
+  color: blue;
+}
+
+.navbar-nav .nav-link:focus {
+  outline: none;
+}
+
+.hero-header {
+  margin-top: 100px;
+}
+
+/* ========================
+   List Styling (Hanya untuk ul.custom-list)
+========================= */
+
+ul.custom-list li {
+  background: #e9ecef;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 1.2em;
+  color: #333;
+  transition: background 0.3s ease;
+}
+
+ul.custom-list li:hover {
+  background: #d9e2ec;
+}
+
+/* ========================
+   Section Styling
+========================= */
+
+section {
+  max-width: 1000px;
+  margin: 80px auto 20px auto;
+  padding: 20px;
+}
+
+/* Program Pelatihan Section */
+#program {
+  align-items: center;
+}
+
+/* Judul Section */
+h1,
+h2 {
+  text-align: center;
+  color: #0056b3;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+/* ========================
+   Paragraph Styling
+========================= */
+
+p {
+  font-size: 1.1em;
+  color: #555;
+  margin: 10px 0;
+}
+
+/* ========================
+   Article Styling
+========================= */
+
+article {
+  background: #f8f9fa;
+  padding: 15px;
+  border-left: 5px solid #007bff;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+article h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* ========================
+   Galeri Foto dan Video Styling
+========================= */
+
+.galeri-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.galeri-item {
+  flex-basis: calc(33.333% - 20px);
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.galeri-item img,
+.galeri-item video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-daftar {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section-daftar h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-daftar p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.btn-daftar {
+  background-color: #ffdd57;
+  color: #212529;
+  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  border: none;
+}
+
+.btn-daftar:hover {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.section-daftar .icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+/* ========================
+   Testimoni Styling
+========================= */
+
+#testimoni {
+  background-color: #f8f9fa;
+}
+
+#testimoni p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+#testimoni h5 {
+  color: #007bff;
+  margin-top: 10px;
+}
+
+#informasi {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#informasi h2 {
+  font-size: 2rem;
+}
+
+#informasi p {
+  font-size: 1.5rem;
+}
+
+.btn-primary {
+  padding: 10px 40px;
+  font-size: 1.5rem;
+  border-radius: 20px;
+}
+
+/* ========================
+   Footer Styling
+========================= */
+
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+footer h5 {
+  margin-bottom: 15px;
+}
+
+footer .form-control {
+  border-radius: 0;
+}
+
+footer .btn-primary {
+  border-radius: 0;
+}
+
+/* ========================
+   Responsive Styling
+========================= */
+
+@media (max-width: 768px) {
+  section {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .galeri-item {
+    flex-basis: calc(50% - 20px);
+  }
+
+  .navbar-nav .ms-auto {
+    margin-top: 10px;
+  }
+
+  .navbar-nav .form-control {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navbar-nav .dropdown-menu {
+    width: 100%;
+  }
+
+  /* Menyesuaikan ukuran gambar carousel pada mobile */
+  #carouselExample .carousel-item img {
+    width: 75%;
+    max-height: 300px;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 769px) {
+  /* Menyesuaikan ukuran gambar carousel pada desktop */
+  #carouselExample .carousel-item img {
+    width: 50%;
+    max-height: 500px;
+    object-fit: cover;
+  }
+}

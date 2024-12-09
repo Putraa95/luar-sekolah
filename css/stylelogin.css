@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Membuat konten utama menggunakan flex agar footer tetap di bawah */
+.container {
+  flex: 1;
+}
+
+/* Footer style */
+footer#kontak {
+  background-color: #343a40;
+  color: white;
+  padding: 30px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Menata konten dalam footer */
+footer#kontak .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer#kontak h5 {
+  margin-bottom: 15px;
+}
+
+footer#kontak a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+footer#kontak a:hover {
+  text-decoration: underline;
+}
